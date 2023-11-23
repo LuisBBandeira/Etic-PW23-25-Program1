@@ -1,0 +1,51 @@
+
+ArquivoTexto = ('NomeArquivo' -> 'ConteudoArquivo')
+
+funcao menu():
+imprime(""
+O que pretende fazer: 
+
+1. Criar um arquivo de texto
+2. Editar um arquivo de texto
+"")
+
+entrada("Opção:" , opcao)
+
+se opcao = 1
+    CriarArquivo()
+
+se opcao = 2
+    MenuEditarArquivo()
+
+funcao CriarArquivo():
+entrada("Nomei o novo arquivo de texto" , NomeArquivo)
+retorno ArquivoTexto.NomeArquivo
+entrada("Escreva o seu texto:" , ConteudoArquivo)
+
+funcao MenuEditarArquivo():
+imprime(""
+O que pretende alterar?
+
+1. O nome do arquivo de texto
+2. O conteudo do arquivo de texto
+"")
+
+entrada("Opção" , opcao)
+    se opcao = 1
+        EditarNomeArquivo()
+
+    se opcao = 2
+        EditarConteudo()
+
+funcao EditarNomeArquivo() 
+entrada("Insira o numero do arquivo de texto que pretende editar" , NomeArquivo)
+    se ArquivoTexto.NomeArquivo = NomeArquivo
+        entrada("Insira o novo nome do arquivo:" , NomeArquivo)
+            update ArquivoTexto.NomeArquivo
+
+funcao EditarConteudo
+entrada("Insira o numero do arquivo de texto que pretende editar" , ConteudoArquivo)
+    se ArquivoTexto.ConteudoArquivo = ConteudoArquivo
+        entrada("Insira o novo nome do arquivo:" , ConteudoArquivo)
+            update ArquivoTexto.ConteudoArquivo
+

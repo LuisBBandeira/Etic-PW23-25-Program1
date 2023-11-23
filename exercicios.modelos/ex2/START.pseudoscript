@@ -1,0 +1,29 @@
+
+modelo jogo:
+    construtor():
+        jogo.tentativa = tentativa
+        jogo.chave = aleatorio()
+        
+funcao guess():
+
+imprime("Bem-vindo tenta adivinar o numero em que o computador esta a pensar no menor numero de tentativas possiveis")
+
+entrada("Digita um numero:" , tentativa)
+    enquanto jogo.chave != jogo.tentativa
+        se jogo.chave < jogo.tentativa
+            imprime("O numero sorteado é menor do que {jogo.tentativa}")
+            entrada("Digita um numero:" , tentativa)
+
+        se jogo.chave > jogo.tentativa
+            imprime("O numero sorteado é maior do que {jogo.tentativa}")
+            entrada("Digita um numero:" , tentativa)
+
+    se jogo.chave = jogo.tentativa
+        imprime("Parabéns acertaste o numero sorteado")
+        entrada("Pertendes jogar outra vez y/n " , opcao)
+
+        se opcao = y
+            guess()
+
+        se opcao = n 
+            sair

@@ -1,0 +1,60 @@
+
+modelo agenda:
+    construtor():
+        agenda.tarefas = tarefa
+        agenda.estado = estado
+
+Task = ('agenda.tarefa' -> 'agenda.estado')
+ListTask = ()
+
+funcao menu():
+
+    imprime(""
+
+    1. Adicionar uma tarefa
+    2. Remover uma tarefa
+    3. Marcar um tarefa concluidas
+    4. Ver tarefas já listadas
+    5. sair
+    "")
+
+    entrada("Opção" , opcao)
+
+    se opcao = 1
+    AddTask()
+
+    se opcao = 2
+    RemoveTask()
+
+    se opcao = 3
+    CompleteTask()
+
+    se opcao = 4
+        ToDo()
+
+funcao AddTask():
+    entrada("Insira a tarefa" , tarefa)
+    retorno Task.tarefa
+    entrada("Insira o estado" , estado)
+    retorno Task.retorno
+    ListTask = Task
+
+funcao RemoveTask():
+    entrada("Insira a tarefa " , tarefa)
+    retorno Task.tarefa
+    ListTask.remove(Task)
+
+funcao CompleteTask():
+    ntrada("Insira a tarefa" , tarefa)
+    retorno Task.tarefa
+    entrada("Insira o estado" , estado)
+    retorno Task.retorno
+
+funcao ToDo():
+
+cada Task em ListTask
+imprime("{agenda.tarefa} ,{agenda.estado}")
+
+
+
+

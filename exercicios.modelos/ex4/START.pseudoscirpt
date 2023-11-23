@@ -1,0 +1,39 @@
+
+modelo CovertorTemperatura:
+    construtor():
+        CovertorTemperatura.Celcius = temperatura1
+        CovertorTemperatura.Fahrenheit = temperatura2
+
+funcao menu():
+imprime(""
+O que pertendes fazer ?
+
+1. Converter de Celcius para Fahrenheit
+
+2. Converter de Fahrenheit para Celcius
+
+3. Sair 
+
+ "")
+
+entrada("Opção:" , opcao)
+
+se opcao = 1
+    CovertorCelcius()
+
+se opcao = 2
+    CovertorFahrenheit()
+
+se opcao = 3
+    sair
+
+funcao CovertorCelcius()
+entrada("Digita a temperatura atual:" , temperatura1)
+temperatura2 = temperatura1 * 1,8 + 32
+imprime("A temperatura atual em fahrenheit é de {CovertorTemperatura.Fahrenheit} ")
+
+funcao CovertorFahrenheit()
+entrada("Digita a temperatura atual" , temperatura2)
+temperatura1 = (temperatura2 - 32) / 1,8
+imprime("A temperatura atual em celcius é de {CovertorFahrenheit}") 
+
