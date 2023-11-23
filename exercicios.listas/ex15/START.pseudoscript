@@ -1,0 +1,13 @@
+
+lista1 = [7, 3, 9]
+lista2 = [2, 8, 6]
+
+funcao concatenarListas(listaA, listaB):
+    cada i em listaB:
+        listaA.add(i)
+    retorne listaA
+
+
+resultado = concatenarListas(lista1, lista2)
+
+imprime("O resultado ao concatenar os dois arrays é: " + resultado)

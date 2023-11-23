@@ -1,0 +1,5 @@
+lista1 = [1,2,3,4]
+lista2 = []
+
+cada i em lista1
+    lista2.add (i)

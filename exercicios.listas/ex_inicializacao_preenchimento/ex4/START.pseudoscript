@@ -1,0 +1,10 @@
+
+funcao DiasDaSemana():
+
+nomes = []
+
+dias = [1..7]
+
+cada i em dias 
+    entrada("Escreve o nome de um dia da semana" , nome)
+        nomes.push(nome)

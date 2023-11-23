@@ -1,0 +1,13 @@
+
+list = [1, 40, 7, 100, 22]
+
+
+IndexProcurado = 22
+
+funcao ProcuradoIndex():
+
+enquanto Procurado != IndexProcurado
+    cada i em list
+        Procurado = i
+
+retorne Procurado

@@ -1,0 +1,9 @@
+list = [1,2,3,4]
+
+Inverter = len(list) - 1
+
+funcao InverterListas(list2):
+enquanto Inverter >= 0
+    list2.append(list[Inverter])
+
+retorne list2

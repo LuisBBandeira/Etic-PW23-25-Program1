@@ -1,0 +1,10 @@
+list = [1,2,3,4,5,6]
+funcao MediaArrey(SomaTotal,QuantidadeNumeros,Media):
+
+cada i em list
+    SomaTotal = SomaTotal + i
+    QuantidadeNumeros +=1
+
+Media = SomaTotal / QuantidadeNumeros
+
+retorno Media

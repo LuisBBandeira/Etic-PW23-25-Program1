@@ -1,0 +1,9 @@
+
+funcao remove():
+
+lista = [1..5]
+
+primeiroElemento = 0
+
+lista.splice(4)
+

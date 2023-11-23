@@ -1,0 +1,9 @@
+list = [1,2,4,5,6,7]
+tamanolista = list[]
+funcao VerificarOrdenado():
+
+cada i em tamanolista - 2
+    se list[i] > list[i + 1]
+        retorno false
+retorne True
+imprime("O array está ordenado")

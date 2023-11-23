@@ -1,0 +1,10 @@
+
+funcao MesesDoAno():
+
+meses = []
+
+numeromeses = [1..12]
+
+cada i em numeromeses
+    entrada("Escreve um mês do ano" , mes)
+        meses.push(mes)

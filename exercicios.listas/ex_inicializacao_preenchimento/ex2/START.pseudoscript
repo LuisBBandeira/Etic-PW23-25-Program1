@@ -1,0 +1,13 @@
+
+funcao sel.valores(x,n):
+
+    lista = []
+
+    n = 0
+
+    entrada("Digita a quantidade de numeros que pretendes adicionar ao array:" , x)
+
+    enquanto x != n
+        entrada("Digita o valor que pretendes inserir na lista" , y)
+            lista.push(y)
+            n = n + 1

@@ -1,0 +1,14 @@
+
+funcao ContaVogais(texto):
+    vogais = [a,e,i,o,u,A,E,I,O,U]
+    contador = 0
+
+    cada caracter em string:
+    
+        se caracter  em vogais
+            contador = contador + 1
+
+    imprime("O número de vogais na string é: " + contador)
+
+entrada("Escreve uma string: ", string)
+

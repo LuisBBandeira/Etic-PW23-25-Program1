@@ -1,0 +1,9 @@
+list = [1,2,3,4,5,6,7]
+
+funcao MaiorValor():
+
+cada i em list
+    se NumMaior < i 
+        MaiorAtual = i
+
+retorne MaiorAtual

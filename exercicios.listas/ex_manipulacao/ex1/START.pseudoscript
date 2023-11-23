@@ -1,0 +1,7 @@
+
+lista1 = [1..10]
+
+lista2 = [0..9]
+
+cada i em lista 1
+    lista3.push(lista1 + lista2)

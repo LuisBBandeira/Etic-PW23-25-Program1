@@ -1,0 +1,9 @@
+
+funcao repeticao.tres():
+
+lista = []
+
+repeticao = [1..5]
+
+cada i em repeticao
+    lista.push(3)

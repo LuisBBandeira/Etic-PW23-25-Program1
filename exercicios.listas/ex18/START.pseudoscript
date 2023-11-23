@@ -1,0 +1,8 @@
+List1 = [1,2,3,4,4,5,1,6,]
+
+funcao RemoverDuplicados(ListSemDuplicados):
+cada i em list1
+    se nao i em ListSemDuplicados
+        ListSemDuplicados.add(i)
+
+retorno ListSemDuplicados

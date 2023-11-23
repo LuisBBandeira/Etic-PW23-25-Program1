@@ -1,0 +1,5 @@
+funcao VeTa():
+
+    lista = [1..9]
+
+t   amanhoDaLista = tamanho(lista)

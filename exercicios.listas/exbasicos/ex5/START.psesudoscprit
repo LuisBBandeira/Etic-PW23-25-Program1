@@ -1,0 +1,9 @@
+
+funcao add():
+
+    lista = [1..5]
+
+    primeiroElemento = lista[0]
+
+    lista.push(6)
+

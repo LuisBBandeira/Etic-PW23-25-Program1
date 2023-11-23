@@ -1,0 +1,11 @@
+
+funcao verificar():
+
+    lista = [1..9]
+
+    elemento = 5
+
+se lista.includes(elemento)
+    retorno "O array contem o elemente"
+senao:
+    retorno"O array não contem o elemente"

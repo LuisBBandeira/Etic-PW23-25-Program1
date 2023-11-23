@@ -1,0 +1,13 @@
+
+funcao str(n):
+
+    lista = []
+
+    tamanhoDaLista = n
+
+funcao add():
+
+    lista(tamanhoDaLista)
+
+    gerar.tamanhoDaLista(10)
+        retorno lista = [1..10]
