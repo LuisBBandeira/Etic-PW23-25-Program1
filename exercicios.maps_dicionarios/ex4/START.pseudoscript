@@ -1,0 +1,25 @@
+
+stock = ('NomeProduto' -> QuantidadaProdutos)
+
+funcao GestaoStock():
+
+entrada("O que deseja fazer adicionar ou remover o produto do stock" , resposta)
+    se resposta = adicionar
+        entrada("Qual o nome do produto:" , NomeProduto)
+            imprime stock.NomeProduto
+            retorno stock.NomeProduto
+
+        entrada("Qual é a quantidade em stock:" , QuantidadaProdutos)
+            imprime stock.QuantidadaProdutos
+            retorno stock.QuantidadaProdutos
+
+    se resposta = remover 
+        entrada("Qual o nome do produto:" , NomeProduto)
+            imprime remove stock.NomeProduto
+            retorno remove stock.NomeProduto
+
+     entrada("Qual é a quantidade em stock:" , QuantidadaProdutos)
+        imprime remove stock.QuantidadaProdutos
+        retorno remove stock.QuantidadaProdutos
+    
+

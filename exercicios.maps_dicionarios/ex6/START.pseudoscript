@@ -1,0 +1,23 @@
+funcao RegistoCompras():
+
+Compras = ('NomeProduto' -> 'preco')
+
+ListaPrecos = []
+
+n = 0
+
+entrada("Qual foi a quantidade de produtos comprados" , quantidade)
+    enquanto n <= quantidade
+        entrada("Qual o nome do produto" , NomeProduto)
+            imprime compras.NomeProduto
+            retorno compras.NomeProduto
+        entrada("Qual o preco do produto" , preco)
+            ListaPrecos.add(preco)
+            imprime compras.preco
+            retorno compras.preco
+
+cada preco em ListaPrecos
+    PrecoTotal = PrecoTotal + preco
+cada NomeProduto , preco
+imprime("Compraste {NomeProduto} por {preco}.)
+imprime("E o total das tuas compras foi:" + PrecoTotal)

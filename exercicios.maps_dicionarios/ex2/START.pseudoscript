@@ -1,0 +1,14 @@
+
+funcao ContagemLetras():
+
+contagemletras = ()
+# x = numero de repetiçoes de um caracter
+
+entrada("Escreve um frase para a contagem de letras:" , frase)
+
+cada letra em frase
+        se contagemletras(letra)+=1
+    senao:
+        contagemletras(letra)=1
+
+imprime(contagemletras)

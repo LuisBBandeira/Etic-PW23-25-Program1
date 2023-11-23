@@ -1,0 +1,52 @@
+Livros = ('Memorial do Convento' -> 'Disponivel' , 'Se isto é um Homen' -> 'indesponivel' , 'O Estrangeiro' -> 'Disponivel' )
+
+
+opcao = ""
+
+enquanto opcao != "ç"
+imprime('' 
+1.Pesquisar livro
+2.Requesitar livro
+3.Devolver livro
+ç. Sair
+'')
+    entrada("Qual a opção pretendida" , opcao)
+
+        se opcao == 1
+            PesquisarLivro()
+        se opcao == 2
+            RequesitarLivro()
+        se Opcao == 3
+            DevolverLivro()
+
+
+funcao PesquisarLivro():
+    entrada("Qual o nome do Livro que procura:" , Nome)
+        se Nome em Livros
+            imprime("O livro {chave} está {valor}")
+        senao:
+            imprime("Não temos ninhum exempelar desse livro de momento")
+
+funcao RequesitarLivro():
+    entrada("Qual o nome do Livro pretende requesitar:" , Nome)
+        se Nome em Livros
+            se  valor != indesponivel
+                Livros[Disponivel].update(indesponivel)
+                imprime("Livro requesitado com sucesso")
+            senao:
+                imprime("O livro em questão não esta disponivel de momento")
+        senao:
+            imprime("Não temos nenhum exempelar desse livro de momento")
+
+funcao RequesitarLivro():
+    entrada("Qual o nome do Livro pretende devolver:" , Nome)
+        se Nome em Livros
+            se  valor != Disponivel
+                Livros[indesponivel].update(Disponivel)
+                imprime("Livro devolvido com sucesso")
+            senao:
+                imprime("O livro em questão ja foi devolvido")
+        senao:
+            imprime("Não temos nenhum exempelar desse livro de momento")
+        
+

@@ -1,0 +1,31 @@
+
+ListaContatos = ('nome' -> 'numero')
+
+funcao AgendaContatos():
+
+entrada("Deseja criar um contato novo y/n" , resposta )
+    se resposta = y or resposta = Y
+        entrada("Digita o nome do novo contato" , x)
+        entrada("Digita o numero do novo contato" , y)
+        DicionarioContato = ('nome' -> 'x','numero' -> 'y')
+        imprime dicionario.contato
+        retorno dicionario.contato
+
+    se resposta = n or resposta = N
+        retorno nulo
+
+    se resposta != y & resposta != Y & resposta != n & resposta != N
+        retorno nulo
+
+
+funcao CriarContato():
+
+entrada("Deseja confirmar o contato y/n" , cofirmacao)
+    se cofirmacao = y or cofirmacao = Y
+        ListaContatos(DicionarioContato.nome) = DicionarioContato.numero
+        imprime(ListaContatos)
+
+    se  confirmar = n or cofirmacao = N
+        retorno nulo
+
+    

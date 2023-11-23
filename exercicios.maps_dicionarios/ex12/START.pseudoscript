@@ -1,0 +1,89 @@
+
+Utente = ('nome' -> 'contribuinte')
+
+funcao RegistoInicial():
+
+entrada("Digita o teu nome:" , nome)
+    imprime Utente.nome
+    retorno Utente.nome
+
+entrada("Digita o teu contribuinte:")
+    imprime Utente.contribuinte
+    retorno Utente.contribuinte
+
+entrada("Pretendes ,1, Sair ,2, reservar voos/hotéis/carros" , opcao)
+
+se opcao = 1
+    sair
+
+se opcao = 2
+    menu()
+
+funcao menu():
+
+entrada("O que prentende resevar ,1,  voos ,2, hotéis ,3, carros , :" , opcao)
+    se opcao = 1
+        ResevarVoos()
+
+    se opcao = 2
+        ResevarHoteis()
+
+    se opcao = 3
+        AlugarCarros
+
+    senao:
+        imprime("Opção errada")
+
+funcao ResevarVoos():
+
+entrada("Qual o voo que pretende reservar:" , voo)
+Voos(Utente.nome) = Voos.voo
+    imprime Voos.voo
+    retorno Voos.Voo
+
+entrada("Prentende ,1, sair ,2, reservar um voo ,3, alugar um carro" , opcao)
+
+se opcao = 1
+    sair
+
+se opcao = 2
+    ResevarHoteis()
+
+se opcao = 3
+    AlugarCarros()
+
+funcao ResevarHoteis():
+
+entrada("Qual o hotel que pretende reservar:" , hotel)
+Hoteis(Utente.nome) = Hoteis.hotel
+    imprime Hoteis.hotel
+    retorno Hoteis.hotel
+
+entrada("Prentende ,1, sair ,2, reservar um voo ,3, alugar um carro" , opcao)
+
+se opcao = 1
+    sair
+
+se opcao = 2
+    ResevarVoos()
+
+se opcao = 3
+    AlugarCarros()
+
+funcao AlugarCarros():
+
+entrada("Qual o nome do carro que pretende reservar" , carro)
+Carros(Utente.nome) = Carros.carro
+    imprime Carros.carro
+    retorno Carros.carro
+
+entrada("Prentende ,1, sair ,2, reservar um voo ,3, alugar um hotel" , opcao)
+
+se opcao = 1
+    sair
+
+se opcao = 2
+    ResevarVoos()
+
+se opcao = 3
+    ResevarHoteis()

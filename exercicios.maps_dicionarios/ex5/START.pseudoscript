@@ -1,0 +1,10 @@
+funcao tradutor():
+
+traducoes = ('tempo' -> 'time' ,'pessoas' -> 'people' , 'modo'-> 'way' , 'água' -> 'water' , 'palavras' -> 'words' , 'homem' -> 'man' , 'trabalho' -> 'work' , 'palavra' -> 'word' , 'parte' -> 'part' , 'lugar' , 'place' -> 'lugar' , 'coisas' -> 'things', 'anos' -> 'years' , 'numero' -> 'number' , 'homens' -> 'men' , 'nome' -> 'name' , 'senhor' -> 'mister' , 'casa' -> 'home' , 'ar' -> 'air', ' linha' -> 'line' , 'som' -> 'sound')
+
+entrada(Qual a palavra que queres traduzir:" , chave)
+    se valor = traducoes.chave
+        imprime("A tradução de {chave} é" , + valor)
+
+    senao:
+        imprime("Não tenho o que procura")

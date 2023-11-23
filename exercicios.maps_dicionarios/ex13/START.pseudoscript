@@ -1,0 +1,75 @@
+MovimentoCredito = ()
+MovimentoDebito = ()
+saldo = SaldoConta
+
+opcao = ""
+enquanto opcao != "ç"
+imprime(''
+
+»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»
+
+                        Menu Principal
+
+                        1-  Visão global
+                    2- Movimentos de saldo
+            ç - Sair      
+
+
+«««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««'')
+
+    entrada("Qual a opção pretendida" , opcao)
+    se opcao == 1
+        Visao_Global()
+    se opcao == 2
+        entrada("Qual foi o tipo de movimento utilizado 1.credito 2.Debito" , CreditoDebito)
+            se CreditoDebito == 1
+                Movimentos_De_Saldo_Credito()
+            se CreditoDebito == 2
+                Movimentos_De_Saldo_Debito()
+    
+    senao:
+        imprime("Opção invalida, porfavor usa os comandos descritos.")
+
+imprime(''
+                Obrigado por utilizares esta app
+                    Até a proxima '')
+
+funcao Visao_Global():
+imprime("O teu saldo atual é de {SaldoConta}")
+imprime("|Movimentos a Debito|")
+cada cada categoria, montante, descricao em base.MovimentoDebito
+    imprime("{categoria} - {montante}  - {descricao}")
+
+imprime("|Movimentos Credito|")
+cada categoria, montante, descricao em base.MovimentoCredito 
+    imprime("{categoria} - {montante}  - {descricao}")
+
+funcao Movimentos_De_Saldo_Credito():
+
+    entrada("Em que que categoria pretendes declarar a tua despesa:" , categoria)
+    entrada("Qual o montante:" , montante)
+    entrada("Escreve um pequena descrição para a tua despesa." , descricao)
+
+    se categoria em base.MovimentoCredito
+        base.MovimentoCredito[categoria].add((montante -> descricao))
+        imprime("Operação feita com sucesso")
+        saldo = saldo + montante
+    senao:
+        base.MovimentoCredito.add((categoria -> (montante -> descricao)))
+        imprime("Operação feita com sucesso")
+        saldo = saldo + montante
+
+funcao Movimentos_De_Saldo_Debito()
+
+    entrada("Em que que categoria pretendes declarar a tua despesa:" , categoria)
+    entrada("Qual o montante:" , montante)
+    entrada("Escreve um pequena descrição para a tua despesa." , descricao)
+
+    se categoria em base.MovimentoDebito
+        base.MovimentoDebito[categoria].add((montante -> descricao))
+        imprime("Operação feita com sucesso")
+        saldo = saldo - montante
+    senao:
+        base.MovimentoDebito.add((categoria -> (montante -> descricao)))
+        imprime("Operação feita com sucesso")
+        saldo = saldo - montante

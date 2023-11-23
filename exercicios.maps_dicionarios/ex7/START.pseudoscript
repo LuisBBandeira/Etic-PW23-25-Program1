@@ -1,0 +1,36 @@
+
+compromissos = ('data' -> 'compromisso')
+
+funcao menu():
+
+entrada("O que prentende fazer ,1, agendar um compromisso ,2, ver os compromisso ja agendados:" , opcao)
+    se opcao = 1 
+        AgendarCompromissos()
+
+    se opcao = 2
+        VerCompromissos()
+
+    senao:
+        imprime("Opção errada")
+
+funcao AgendarCompromissos():
+
+    entrada("Digita a data do compromisso no formato DD/MM/AAAA:" , data)
+    imprime compromissos.data
+    retorno compromissos.data
+
+    entrada("Nomeia o compromisso:" , compromisso)
+    imprime compromissos.compromisso
+    retorno compromissos.compromisso
+
+funcao VerCompromissos():
+    se tamanho(compromissos) = 0
+        imprime("Não existem compromissos agendados")
+
+    senao:
+        imprime("Os compromissos agendados sao:")
+        DatasOrdem = compromissos.data
+        DatasOrdem.ordenar()
+        imprime("{data} : {compromisso}")
+
+

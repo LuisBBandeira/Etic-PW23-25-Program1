@@ -1,0 +1,38 @@
+
+Idades = ('nome' -> 'idade')
+
+funcao menu():
+
+entrada("O que prentende fazer ,1, Calcular a idade ,2, ver as idades:" , opcao)
+    se opcao = 1
+        CalcularIdade()
+
+    se opcao = 2
+        VerIdades()
+
+    senao:
+        imprime("Opção errada")
+
+funcao CalcularIdade():
+
+idade = AnoAtual - AnoNacimento
+retorno Idades.idade
+
+Idades.nomes = idade
+
+entrada("Digita o teu nome:" , nome)
+imprime Idades.nome
+retorno Idades.nome
+
+entrada("Digita o ano em que te encontras" , AnoAtual)
+
+entrada("Digita em que ano nasceste" , AnoNacimento)
+
+funcao VerCompromissos():
+    se tamanho(Idades) = 0
+        imprime("Não existem idades calculadas")
+
+    senao:
+    cada pessoa, idade em Idades
+        imprime ("{nome} ,{idade}")
+

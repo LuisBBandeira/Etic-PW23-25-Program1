@@ -1,0 +1,37 @@
+
+Ranking = ('nome' -> 'pontuacao')
+
+funcao menu():
+
+entrada("O que prentende fazer ,1, Inserir pontuação ,2, Ver Ranking:" , opcao)
+    se opcao = 1
+        InserirPontuacao()
+
+    se opcao = 2
+        VerRanking()
+
+    senao:
+        imprime("Opção errada")
+
+funcao InserirPontuacao():
+    entrada("Escreve o nome do player:" , nome)
+        imprime Ranking.nome
+        retorno Ranking.nome
+
+    entrada("Digita a pontuação alcançada:" , pontuacao)
+        imprime Ranking.pontuacao
+        imprime Ranking.pontuacao
+
+funcao  VerRanking():
+
+    se tamanho(Ranking) = 0
+        imprime("Ainda não foi inserida nenhuma pontuação")
+
+    senao:
+        imprime("Ranking dos players:")
+        PlayersOrdenados = Ranking.pontuacao
+        PlayersOrdenados.ordenar(Ranking , descendente = true)
+        cada pontuacao em PlayersOrdenados
+            imprime("{nome} : {pontuacao}")
+
+

@@ -1,0 +1,42 @@
+
+projetos = ('NomeProjeto' -> 'DescricaoProjeto')
+
+funcao menu():
+
+entrada("O que prentende fazer ,1, criar projeto ,2, atribuir um tarafa a um projeto ,3, informações sobre um projeto , :" , opcao)
+    se opcao = 1
+        CriarProjeto()
+
+    se opcao = 2
+        AtribuirTarefa()
+
+    se opcao = 3
+        InfoProjeto()
+
+    senao:
+        imprime("Opção errada")
+
+funcao CriarProjeto():
+    entrada("Qual o nome do novo projeto" , NomeProjeto)
+        imprime projetos.NomeProjeto
+        retorno projetos.NomeProjeto
+    entrada('Qual a drescrição do novo projeto' , DescricaoProjeto)
+        imprime projetos.DescricaoProjeto
+        retorno projetos.DescricaoProjeto
+
+funcao AtribuirTarefa()
+        
+entrada("Digita o nome do projeto em questão:" , NomeProjeto)
+entrada("Denomina a tarefa que queres atribuir ao projeto" , Tarefa)
+ProjetoTarefa(projetos.NomeProjeto) = ProjetoTarefa.Tarefa
+imprime ProjetoTarefa.Tarefa
+retorno ProjetoTarefa.Tarefa
+
+funcao InfoProjeto():
+
+entrada("Digita o nome do projeto que pretendes ver a informaçao" , NomeProjeto)
+    se NomeProjeto = projetos.NomeProjeto & NomeProjeto = ProjetoTarefa.Tarefa
+        imprime("O projeto {NomeProjeto}, apresenta como descricao {DescricaoProjeto}, e tem com tarefas {Tarefa}")
+    
+
+    

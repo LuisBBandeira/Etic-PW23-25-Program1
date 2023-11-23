@@ -1,0 +1,11 @@
+
+funcao sinonimo():
+
+sinonimos = ('contribuições' -> 'auxílios' , 'lugares' -> 'locais' , 'tratamentos' -> ' procedimentos')
+
+entrada(Qual a palavra que queres traduzir:" , chave)
+    se valor = sinonimo.chave
+        imprime("A tradução de {chave} é" , + valor)
+
+    senao:
+        imprime("Não tenho o que procura")

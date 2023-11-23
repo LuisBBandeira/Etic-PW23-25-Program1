@@ -1,0 +1,36 @@
+
+medias = ('nome' -> 'medianota')
+
+ListaNotas = []
+
+n = 0
+
+funcao PreguntarNotas(n):
+
+entrada("Escreve o teu nome:" , nome)
+    imprime medias.nome
+    retorno medias.nome
+
+entrada("Quantos testes foram feitos:" , testes)
+    enquanto n <= testes
+        entrada("Digita a nota que tiveste no teste" , nota)
+            ListaNotas.add(nota)
+            n = n + 1
+
+funcao CalcularMedias(notas):
+
+cada i em ListaNotas
+    notas = notas + i
+
+medianota = notas / testes
+imprime medias.medianota
+retorno medias.medianota
+
+cada chave, valor em medias
+    imprime("O aluno {chave} tem um media de {valor}")
+
+
+
+
+
+            
