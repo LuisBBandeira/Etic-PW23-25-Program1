@@ -1,0 +1,11 @@
+
+funcao ANO():
+
+    entrada("Digite um ano: , x")
+        se x / 4 = 0 & x / 400 = 0 & x /100 > 0
+            imprime("o teu ano é bissexto")
+        
+        senao:
+            imprime("o teu ano não é bissexto")
+        
+            

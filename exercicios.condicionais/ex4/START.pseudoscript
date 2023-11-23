@@ -1,0 +1,13 @@
+
+funcao COMP():
+    entrada("Digite o primeiro numero:" , x)
+
+    entrada("Digita o segundo numero:" , y)
+        se x = Y
+            imprime("O primeiro numero é igual ao segundo")
+
+        se x < y 
+            imprime("O segundo numero é maior")
+        
+        senao:
+            imprime("O primeiro numero é maior)

@@ -1,0 +1,9 @@
+
+funcao MUL5():
+    entrada("Digite um numero:" , x)
+
+    se x % 5 = 0
+        imprime("O teu numero é multiplo de cinco")
+
+    senao:
+        imprime("O teu numero não é multiplo de cinco")

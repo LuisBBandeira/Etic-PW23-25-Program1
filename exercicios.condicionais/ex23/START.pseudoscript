@@ -1,0 +1,12 @@
+funcao QuadradoPerfeito(x):
+    s = sqrt(x)
+    retorno s * s == x
+
+funcao NumeroFibonacci(n):
+    retorno QuadradoPerfeito(5*n*n +4) ou QuadradoPerfeito(5*n*n - 4)
+
+cada i em range(1..10)
+    se NumeroFibonacci(i):
+        imprime("É um número de Fibonacci")
+    senao:
+        imprime("Não é um número de Fibonacci")

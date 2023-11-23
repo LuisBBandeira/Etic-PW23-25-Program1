@@ -1,0 +1,23 @@
+funcao NumeroArmstrong(ano):
+
+string_ano = texto(ano)
+num_digitos = tamanho(string_ano)
+soma = 0
+
+cada digito em string_ano:
+    soma = soma + PotenciaElevada(digito) , num_digitos
+
+retorno soma == ano
+
+fucao PotenciaElevada():
+    resultado = 1
+    cada i em list(1..expoente)
+        resultado = resultado * base
+    retorno resultado
+
+entrada("Digite o ano:" , ano)
+
+se NumeroArmstrong(ano)
+    imprime("{ano} é um número de Armstrong")
+senao:
+    imprime("{ano} não é um número de Armstrong")

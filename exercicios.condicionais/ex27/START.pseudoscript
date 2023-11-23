@@ -1,0 +1,29 @@
+
+funcao ClassificarTriangulo(lado1, lado2, lado3):
+    se nao ValidarTriangulo(lado1, lado2, lado3):
+        imprime("Os lados que digitados não verificam um triângulo válido.")
+        retorne
+
+    quadrado_lado1 = lado1 * lado1
+    quadrado_lado2 = lado2 * lado2
+    quadrado_lado3 = lado3 * lado3
+
+    se quadrado_lado1 + quadrado_lado2 == quadrado_lado3 ou
+       quadrado_lado2 + quadrado_lado3 == quadrado_lado1 ou
+       quadrado_lado1 + quadrado_lado3 == quadrado_lado2:
+        imprime("O triângulo é retângulo.")
+    senao se quadrado_lado1 + quadrado_lado2 < quadrado_lado3 or
+            quadrado_lado2 + quadrado_lado3 < quadrado_lado1 or
+            quadrado_lado1 + quadrado_lado3 < quadrado_lado2:
+        imprime("O triângulo é obtusângulo.")
+    senao:
+        imprime("O triângulo é acutângulo.")
+
+funcao ValidarTriangulo(lado1, lado2, lado3):
+    retorne lado1 + lado2 > lado3 e lado2 + lado3 > lado1 e lado1 + lado3 > lado2
+
+entrada("Digite o comprimento do primeiro lado: ", lado1)
+entrada("Digite o comprimento do segundo lado: ", lado2)
+entrada("Digite o comprimento do terceiro lado: ", lado3)
+
+ClassificarTriangulo(lado1, lado2, lado3)

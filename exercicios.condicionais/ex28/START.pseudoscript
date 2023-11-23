@@ -1,0 +1,25 @@
+
+funcao VerificarPrimoMersene():# Primeiro verifiquei se o numero era primo
+se x / x = 1 & x % x = 0
+    retorno numero = true
+senao:
+imprime("O número não é primo de Mersenne")
+
+y = x + 1 # O numero for primo adiciono 1 porque a formula de numeros de mersenne é Mn = 2^n -1
+
+se numero = true # depois de adicionar 1 a x verifico se y (que é igual a x +1) é potencia de 2  se for é numero primo de mersenne
+    enquanto y > 1
+            se y % 2 != 0
+                retorno false
+        numero = numero / 2 
+                retorno true
+            imprime("O numero é primo de Mersenne")
+
+            senao:
+                imprime("O numero não é primo de Mersenne")
+        
+
+
+entrada("Digita um numero para verificar se é numero de Mersenne" , x)
+    
+

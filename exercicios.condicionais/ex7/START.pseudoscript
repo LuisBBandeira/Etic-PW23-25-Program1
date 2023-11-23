@@ -1,0 +1,8 @@
+
+funcao Primo():
+    entrada(Digita o numero:" , x)
+        se x / x = 1 & x % x = 0
+            imprime("O teu numero é primo")
+
+        senao:
+            imprime("O teu numero não é primo")   

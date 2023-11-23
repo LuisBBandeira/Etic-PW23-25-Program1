@@ -1,0 +1,15 @@
+
+
+funcao MEDIA():
+    entrada(Digita a nota do primero teste:" , x)
+
+    entrada(Digita a nota do segundo teste:" , y)
+
+    entrada(Digita a nota do terceiro teste:" , z)
+
+    soma = x + y + z
+
+    se soma/3 >= 7 
+        imprime("Foste aprovado")
+    
+    senao("Foste reprovado")

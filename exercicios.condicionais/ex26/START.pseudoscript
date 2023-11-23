@@ -1,0 +1,16 @@
+
+funcao Qua.Pre():
+    entrada("Digita um numero:" , x)
+
+    list[1..lastnum]
+    list2 = list^2
+
+    raiz x = num
+
+    se num = list2 
+        imprime("O numero que é um quadrado prefeito")
+
+    senao:
+        imprime("O numero não é um quadrado prefeito")
+    
+    

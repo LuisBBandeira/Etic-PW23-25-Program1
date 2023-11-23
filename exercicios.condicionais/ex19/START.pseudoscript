@@ -1,0 +1,14 @@
+
+        funcao Des.NISS():
+        entrada("Digita o valor do teu salario")
+
+        se x <= 1100 
+           desconto = x * 0.11
+        imprime("O desconte do NISS é de:" + desconto)
+
+        senao:
+            desconto = x * 0.275
+        imprime("O desconto do Niss é de:" + desconto)
+
+
+        

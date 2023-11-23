@@ -1,0 +1,9 @@
+
+funcao VOTAR():
+    entrada("Digita a tua idade:" , x)
+
+    se x < 16 
+        entrada("Não esta legivel a votar")
+    
+    senao:
+        entrada("estas legivel a votar")

@@ -1,0 +1,15 @@
+
+funcao DIV():
+    entrada("Digita um numero:" , x)
+
+    se x % 3 = 0 & x % 5 = 0
+        imprime("O teu numero é divisivel por 3 e por 5")
+    
+    se x % 3 = 0 & x % 5 != 0 
+        imprime("o teu numero é divisivel por 3")
+
+    se x % 3 != 0 & x % 5 = 0
+        imprime("O teu numero é divisivel por 5")
+
+    senao:
+        imprime("O teu numero nao é divisivel por 3 nem por 5")

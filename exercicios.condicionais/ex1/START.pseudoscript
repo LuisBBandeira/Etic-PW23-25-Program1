@@ -1,0 +1,13 @@
+
+
+funcao DTRNUMEROS():
+
+    entrada("Digita um numero:" , x)
+        se x = 0
+            imprime ("O teu numero é zero")
+
+        se x < 0 
+            imprime("O teu numero é negativo")
+
+        se x > 0
+            imprime("o teu numero é positivo)

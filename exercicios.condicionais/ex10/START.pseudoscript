@@ -1,0 +1,16 @@
+
+funcao TRI():
+    entrada(Digita a medida do primeiro lado do triângulo:" , x)
+
+    entrada(Digita a medida do segundo lado:" , y)
+    
+    entrada(Digita a medida do terceiro lado:" , z)
+
+    se x = y & y = z
+        imprime("O teu triângulo é equilátero")
+    
+    se x = y &  y != z ou y = z & z != x ou x = z & z != y
+        imprime(" O teu triângulo é isósceles")
+
+    senao:
+        imprime("O teu triângulo é escaleno")

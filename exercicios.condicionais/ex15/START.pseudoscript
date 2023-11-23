@@ -1,0 +1,10 @@
+
+funcao AnoPri():
+    entrada("Digita um ano:" , x)
+
+     se x / x = 1 & x % x = 0
+        imprime("O ano que escolhes-te é primo")
+
+    senao:
+        imprime("O ano que escolhes-te não é primo")
+    

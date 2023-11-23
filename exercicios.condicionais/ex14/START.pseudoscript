@@ -1,0 +1,23 @@
+
+funcao perfeito():
+
+divisores_soma = 0
+
+cada i em lista(1, numero):
+    se numero % i == 0:
+        divisores_soma = divisores_soma + i
+
+se divisores_soma - numero == numero
+    NumeroPerfeito = True
+senao:
+    NumeroPerfeito = False
+
+entrada("Digite um número:" , numero)
+
+se NumeroPerfeito = True
+    imprime("O número {numero} é perfetio")
+senao:
+    imprime("O número {numero} não é perfeito")
+    
+
+

@@ -1,0 +1,13 @@
+
+funcao fatorial():
+
+lista =[1..numero]
+NumeroFatorial = 1
+
+
+entrada("Digita um numero para descobrir o seu fatorial:" , numero)
+
+se numero > 0
+    cada i em lista
+    NumeroFatorial = Numerofatorial * i
+imprime("O fatorial de {numero} é {NumeroFatorial}")

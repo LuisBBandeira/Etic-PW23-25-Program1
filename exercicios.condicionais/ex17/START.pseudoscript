@@ -1,0 +1,15 @@
+
+funcao ClASS():
+    entrada("Qual é a tua idade" , x)
+
+    se  0 <= x <= 12
+        imprime("Estas classificado com uma criança")
+    
+    se 13 <= x <= 17
+        imprime("Estas classificado como um adolescente")
+
+    se 18 <= x <= 59
+        imprime ("Estas classificado como um adulto")
+
+    se x >= 60
+        imprime("Estas classificado como um idoso")

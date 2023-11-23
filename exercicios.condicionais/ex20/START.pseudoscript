@@ -1,0 +1,13 @@
+funcao palindromo(palavra):
+
+se palavra == [::-1]
+    retorno PalavraPalindromo = true
+senao:
+    retorno PalavraPalindromo = false
+
+entrada("Digite um palavra:" , palavra)
+
+se PalavraPalindromo = true
+    imprime("{palavra} é um palíndromo")
+senao:
+    imprime("{palavra} não é um palíndromo.")

@@ -1,0 +1,9 @@
+
+funcao UBER():
+
+    Distacia.Precorrida = raiz quadrada ((inicio-fim)*(inicio-fim)) + ((inicio-fim)*(inicio-fim))
+
+    preco = Distacia.Precorrida * 1,5
+
+    imprime("Iras pagar:", + preco)
+

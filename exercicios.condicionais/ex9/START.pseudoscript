@@ -1,0 +1,9 @@
+
+funcao DES():
+    se x > 100
+        x * 0.10 = desconto
+        preco = x - desconto 
+            imprime("O teu desconto é de," +preco)
+    
+    senao:
+        imprime("Não teras desconto")

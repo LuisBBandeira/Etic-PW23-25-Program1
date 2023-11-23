@@ -1,0 +1,11 @@
+
+funcao Raiz():
+
+entrada("Digite um numero" , x)
+
+    se x > 0 
+        resultado = raiz x 
+        imprime("A raiz do teu numero é" + resultado)
+    
+    senao:
+        imprime("O teu numero não tem raiz")

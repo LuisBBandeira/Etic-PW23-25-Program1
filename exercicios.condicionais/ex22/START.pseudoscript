@@ -1,0 +1,8 @@
+
+funcao CarAl():
+
+num.dia = num.dia * 50
+num.km = num.km * 0.2
+preco.total = num.dia + num.km
+
+imprime("Iras pagar:" + preco.total)

@@ -1,0 +1,9 @@
+
+funcao PAIM():
+
+     entrada("Digita um numero:" , x)
+        se x % 2 = 0 
+            imprime("o teu numero é par")
+
+        se x % 2 > 0
+            imprime("o teu numero é impar")    

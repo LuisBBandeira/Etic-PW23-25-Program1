@@ -1,0 +1,13 @@
+funcao NumTri():
+
+entrada(Digita um numero:" , x)
+
+NumNut=[1..lastnum]
+
+NumTr = [(NumNut(NumNut + 1)) / 2]
+
+se x = Numtr 
+    imprime("O teu numero é triangular")
+
+senao:
+    imprime("O teu numero não é triangular")

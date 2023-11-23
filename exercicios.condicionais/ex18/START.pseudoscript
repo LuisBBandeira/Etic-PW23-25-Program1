@@ -1,0 +1,14 @@
+
+funcao PONT():
+    entrada("Digita um numero:" , x)
+
+    enquanto numero > 1
+        se numero % 2 != 0
+            retorno false
+    numero = numero / 2 
+            retorno true
+    
+        imprime("O numero  é potencia de 2")
+
+        senao:
+            imprime("O numero nao é potencia de 2")
